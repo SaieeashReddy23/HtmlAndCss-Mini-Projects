@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -257,3 +257,110 @@ ul {
 Navbar
 ===============
 */
+
+nav {
+  background-color: var(--white);
+  box-shadow: var(--shadow-3);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.small-screen-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 2rem;
+}
+
+.logo {
+  margin-bottom: 0;
+}
+
+.logo-style {
+  font-weight: bold;
+  color: var(--primary-500);
+}
+
+.bars {
+  color: var(--primary-500);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.bars:hover {
+  transform: rotateZ(90deg);
+}
+
+.nav-links {
+  gap: 1rem;
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: var(--transition);
+}
+
+.nav-links a {
+  color: var(--grey-700);
+}
+
+.nav-links a:hover {
+  color: var(--primary-500);
+}
+
+.link {
+  padding: 0.5rem 2rem;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 176px;
+}
+
+.link:hover {
+  background-color: var(--primary-300);
+}
+
+.soc-links {
+  display: none;
+  gap: 1rem;
+}
+
+.soc-links a {
+  color: var(--primary-500);
+}
+
+.soc-links a:hover {
+  color: var(--primary-300);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    height: fit-content;
+  }
+
+  .nav-links li {
+    padding: 0 1rem;
+  }
+
+  .soc-links {
+    display: flex;
+    padding-right: 2rem;
+  }
+
+  .bars {
+    display: none;
+  }
+}
