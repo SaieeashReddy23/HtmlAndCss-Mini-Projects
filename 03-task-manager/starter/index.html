@@ -16,6 +16,53 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>task manager starter</h1>
+    <div class="container">
+      <form class="form">
+        <h4>Task Manager</h4>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="e.g. wash dishes"
+            class="form-input task-input"
+          />
+          <button class="btn task-btn">Submit</button>
+        </div>
+        <small class="form-alert">There was an error</small>
+      </form>
+      <div>Loading...</div>
+      <div class="task">
+        <h5>
+          <span class="check check-remove">
+            <i class="far fa-check-circle"></i>
+          </span>
+          Task Name
+        </h5>
+        <div class="icons">
+          <a href="./task.html" class="edit">
+            <i class="fas fa-edit"></i>
+          </a>
+          <button class="delete-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="task completed">
+        <h5>
+          <span class="check">
+            <i class="far fa-check-circle"></i>
+          </span>
+          Task Name
+        </h5>
+        <div class="icons">
+          <a href="./task.html" class="edit">
+            <i class="fas fa-edit"></i>
+          </a>
+          <button class="delete-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
