@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -41,14 +41,14 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
-  --letterSpacing: 1px;
+  --letterSpacing: 3px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;
   --fixed-width: 600px;
@@ -257,3 +257,79 @@ ul {
 Nav
 ===============
 */
+
+nav {
+  box-shadow: var(--shadow-2);
+  height: 60px;
+}
+
+.nav-info {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+  align-items: center;
+}
+
+.nav-logo {
+  color: var(--primary-500);
+  font-weight: 600;
+}
+.nav-links {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 0 1rem;
+  text-transform: capitalize;
+  color: var(--bodyFont);
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary-500);
+}
+
+.hero {
+  height: calc(100vh - 60px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  text-align: center;
+}
+
+.hero-banner h2 {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+}
+
+.hex-val {
+  color: var(--primary-500);
+}
+
+.hero-btn {
+  text-transform: uppercase;
+  color: var(--bodyFont);
+  border: 2px solid var(--black);
+  border-radius: var(--borderRadius);
+  background: transparent;
+  padding: 0.5rem 1rem;
+}
+
+.hero-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
