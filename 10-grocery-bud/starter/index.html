@@ -16,6 +16,44 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>grocery bud starter</h1>
+    <form class="form my-form">
+      <small class="form-alert alert">Please Enter Value</small>
+      <h4>Grocery Bud</h4>
+      <div class="form-row row">
+        <input
+          type="text"
+          class="form-input my-input"
+          placeholder="e.g. eggs"
+        />
+        <button class="btn submit-btn">Submit</button>
+      </div>
+
+      <div class="items">
+        <div class="item">
+          <div>Oranges</div>
+          <div class="icons">
+            <button class="icon edit-icon">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="icon trash-icon">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div>Apples</div>
+          <div class="icons">
+            <button class="icon edit-icon">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="icon trash-icon">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="foot">Clear Items</p>
+    </form>
   </body>
 </html>
