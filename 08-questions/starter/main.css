@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -260,3 +260,73 @@ Questions
 ===============
 */
 /* gold color in css vars */
+
+.title {
+  color: var(--gold);
+  font-family: "Great Vibes", cursive;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.questions-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.question {
+  height: 84px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+  width: 100%;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  transition: var(--transition);
+}
+
+.show-text {
+  height: 182px;
+}
+
+.quest {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.line {
+  border-top: 1px solid var(--grey-300);
+}
+
+/* 84 px normal , 181px with text */
+
+.answer {
+  /* display: none; */
+  padding: 0 1rem;
+  color: var(--grey-500);
+}
+
+.question-btn {
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.question-btn:hover {
+  transform: rotateZ(90deg);
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
