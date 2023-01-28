@@ -13,12 +13,12 @@ const getElement = (selector, list) => {
 };
 
 // traversing the dom
-const btns = getElement('.question-btn', true);
+const btns = getElement(".question-btn", true);
 
 btns.forEach(function (btn) {
-  btn.addEventListener('click', function (e) {
+  btn.addEventListener("click", function (e) {
+    console.log("show answer button is pressed");
     const question = e.currentTarget.parentElement.parentElement;
-
-    question.classList.toggle('show-text');
+    question.classList.toggle("show-text");
   });
 });
